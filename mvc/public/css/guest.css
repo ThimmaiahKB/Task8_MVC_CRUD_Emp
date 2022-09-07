@@ -1,0 +1,22 @@
+.guesttop
+{
+    
+    background: black;
+    margin-top: 7px;
+    margin-bottom: 30px;
+    height:50px;
+    text-align: center;
+    
+
+}
+.guesttop h3
+{   
+    padding-top: 10px;
+    font-weight: bold;
+    color:white;
+  
+}
+.goback
+{
+   margin-right: 100px;
+}

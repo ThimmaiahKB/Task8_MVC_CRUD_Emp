@@ -1,0 +1,138 @@
+
+.topbar 
+{
+    display: flex; 
+    align-items: right; 
+    justify-content: right; 
+    background:rgb(21,32,43);
+    height:100px;
+    align-items: right;
+    justify-content: right;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.topbar  button[type=button]
+{
+    
+    height:50px;
+    width:150px;
+    margin-top: 20px;
+    padding-left: 10px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background:white;
+    border-radius: 20px;
+    border: none;
+}
+.topbar button[type=submit]
+{
+    background:white;
+    border-radius: 20px;
+    margin-top: 20px;
+    height:50px;
+    width:150px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border:none;
+}
+.searchdiv
+{   
+    margin-right: 800px;
+}
+.search input
+{
+    height:40px;
+    width:310px;
+    border-radius:6px;
+    text-align: center;
+}
+.topbar .searchdiv button
+{
+    height: 40px;
+    width :91px;
+    
+}
+
+
+
+/* register form */
+
+.o_registerdiv
+{
+    display: none;  
+}
+.main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.i_registerdiv{
+   
+    max-width: 600px;
+    background-color: #f0efef;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 10px rgba(0,0,0,0.15);
+}
+.fill
+{
+    text-align:center;
+    font-weight: bold;
+}
+.udetails
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.ef span
+{
+    font-weight: bold;
+    font-size: 16px;
+}
+.inputbox
+{
+    
+    width:calc(100% / 2 -  30px);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.inputbox input
+{
+    height:40px;
+    width:100%;
+}
+.submitbox input[type=submit]
+{
+    margin-top:10px;
+    height:40px;
+    width:550px;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.inputbox input[type=file]
+{
+   height:40px;
+}
+#export
+{
+    padding-right: 10px;
+}
+.mt
+{
+    margin-left: 30px;
+}
+
+
+
+
+

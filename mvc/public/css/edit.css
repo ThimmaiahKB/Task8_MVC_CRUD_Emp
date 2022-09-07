@@ -1,0 +1,76 @@
+.E_main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.E_i_registerdiv{
+   
+    max-width: 600px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.E_fill
+{
+    text-align:center;
+    font-weight: bold;
+}
+.E_udetails
+{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.E_ef span
+{
+    font-weight: bold;
+    font-size: 16px;
+}
+.E_inputbox
+{
+    
+    width:calc(100% / 2 -  30px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.E_inputbox input
+{
+    height:40px;
+    width:100%;
+}
+.E_submitbox input[type=submit]
+{
+    margin-top:10px;
+    height:40px;
+    width:580px;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.E_submitbox button
+{
+    margin-top:10px;
+    height:40px;
+    width:580px;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.E_submitbox button a
+{
+    text-decoration: none;
+    color:white;
+}
+.E_inputbox input[type=file]
+{
+   height:40px;
+}
