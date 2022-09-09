@@ -13,7 +13,6 @@
         public function update_data($found)
 
         {
-                 
             $fname = $_POST['fname'];
             $lname = $_POST['lname'];
             $email = $_POST['email'];
@@ -25,7 +24,15 @@
             $zip = $_POST['zip'];
             $filename= $_FILES['file']['name'];
             
-
+            
+            if($filename==null)
+            {
+                $this->query("update emp_details set firstname='$fname' ,lastname='$lname' ,email='$email' ,phone='$phone' ,
+                street='$street' ,city='$city' ,state='$state' ,country='$country', zip='$zip' where emp_id='$found->emp_id'");
+                return $this->execute();
+            }
+            else
+            {
             $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
       		$randstring = '';
         	for ($i = 0; $i < 10; $i++) 
@@ -44,7 +51,7 @@
             $this->query("update emp_details set firstname='$fname' ,lastname='$lname' ,email='$email' ,phone='$phone' ,
             street='$street' ,city='$city' ,state='$state' ,country='$country', zip='$zip', imagepath='$newfilename' where emp_id='$found->emp_id'");
             return $this->execute();
-            
+            }
         }
 }
 

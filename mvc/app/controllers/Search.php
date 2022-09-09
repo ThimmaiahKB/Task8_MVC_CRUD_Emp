@@ -8,26 +8,23 @@
     }
     public function search_emp()
     {
-        if(isset($_SESSION['name']))
-        {
+        if(isset($_SESSION['name'])){
+
         $search = $this->model('search_emp');
         $keyname=$_POST['searchemployee'];
         $searchresult = $search->find_data($keyname);
         
-        if($searchresult)
-        {
+        if($searchresult){
             $this->view('pages/adminpage',$searchresult);
         }
-        else
-        {
+        else{
             $search_error = [
                 's_error' => "user not found"
             ];
             $this->view('pages/adminpage',$search_error);
         }
     }
-    else
-    {
+    else{
         $this->view('pages/loginforadmin');
     }
 

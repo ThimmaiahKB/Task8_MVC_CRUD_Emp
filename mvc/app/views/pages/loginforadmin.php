@@ -1,20 +1,17 @@
 <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/loginpageadmin.css">
-<script type="text/javascript" src="<?php echo URLROOT ; ?>/js/admin_validation.js"></script> 
 <?php require APPROOT . '/views/inc/header.php'; ?>
 
-
-  <div id="invalid_credentials"><?php echo $data['ee']; ?></div>
+<div id="invalid_credentials"><?php echo $data['loginerror'] ?></div>
   <div class="outteradmin">
     <div class="inneradmin">
-      <form name="adminloginform" class="alog" action="<?php echo URLROOT . 'pages/adminlogincheck' ?>" method="post">
-        <h1>Admin login</h1>  
+      <form name="adminloginform" class="alog" action="<?php echo URLROOT . 'pages/adminlogincheck' ?>" method="post" onsubmit="return validation()">
+        <h1>Admin login</h1> 
+         
         <label>Username</label>
-        <input class="input100" type="text" name="adminname" placeholder="type your username">
-        <p class="error adminname-error"></p>
+        <input id="username" type="text" name="adminname" placeholder="type your username">
         <label>password</label>
-        <input type="password" name="adminpassword" placeholder="type your password">
-        <p class="error adminpassword-error"></p>
-        <input type="submit" name="adminloginform" value="Login">
+        <input id="password" type="password" name="adminpassword" placeholder="type your password">
+        <input type="submit" id="submit" name="adminloginform" value="Login">
       </form>
     </div>
 </div>

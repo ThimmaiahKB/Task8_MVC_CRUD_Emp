@@ -9,8 +9,7 @@
         }
         public function export()
         {
-            if(isset($_SESSION['name']))
-            {
+            if(isset($_SESSION['name'])){
                 
                 $exp =$this->model('export');
                 $result=$exp->fetch_to_export();
@@ -28,8 +27,7 @@
                 header("Content-Disposition: attachment; filename=\"$filename\""); 
                 fclose($output); 
             }
-            else
-            {
+            else{
                  $this->view('pages/loginforadmin');
             }
     }

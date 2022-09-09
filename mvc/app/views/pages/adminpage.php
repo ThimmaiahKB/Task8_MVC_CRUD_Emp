@@ -12,8 +12,8 @@
     <button type="button" name="new" id="addnew" onclick="myFunction1()">Add new</button> 
     <a href="<?php echo URLROOT .'pages/logout' ?>"><button type="button" name="logout">Logout</button></a>
 </div>
+<div id="email_error"><?php echo $data; ?></div>
 <div class="o_registerdiv" id="o_registerdiv">
-    <h4><?php echo $data['error']; ?>
     <div class="main">
     <div class="i_registerdiv">
     <form class="ef" action="<?php echo URLROOT .'pages/addnewemp' ?>" method="post" enctype="multipart/form-data">
@@ -21,15 +21,15 @@
         <div class="udetails">
             <div class="inputbox">
                 <span class="details">Firstname</span>
-                <input type="text" name="fname" placeholder="first name">
+                <input type="text" name="fname" placeholder="first name" required>
             </div>
             <div class="inputbox">
                 <span class="details">Lastname</span>
-                <input type="text" name="lname" placeholder="last name">
+                <input type="text" name="lname" placeholder="last name" required>
             </div>
             <div class="inputbox">
                 <span class="details">Email</span>
-                <input type="email" name="email"placeholder="email">
+                <input type="email" name="email"placeholder="email" require>
             </div>
             <div class="inputbox">
                 <span class="details">Phone Number</span>

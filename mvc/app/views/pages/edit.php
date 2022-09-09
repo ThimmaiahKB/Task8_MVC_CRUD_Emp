@@ -6,15 +6,15 @@
         <div class="E_udetails">
             <div class="E_inputbox">
                 <span class="details">Firstname</span>
-                <input type="text" name="fname" placeholder="first name" value='<?=$data->firstname ?>' >
+                <input type="text" name="fname" placeholder="first name" value='<?=$data->firstname ?>' required>
             </div>
             <div class="E_inputbox">
                 <span class="details">Lastname</span>
-                <input type="text" name="lname" placeholder="last name" value='<?=$data->lastname ?>'>
+                <input type="text" name="lname" placeholder="last name" value='<?=$data->lastname ?>' required>
             </div>
             <div class="E_inputbox">
                 <span class="details">Email</span>
-                <input type="email" name="email"placeholder="email" value='<?=$data->email ?>'>
+                <input type="email" name="email"placeholder="email" value='<?=$data->email ?>' required>
             </div>
             <div class="E_inputbox">
                 <span class="details">Phone Number</span>

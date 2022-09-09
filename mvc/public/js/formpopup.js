@@ -16,3 +16,12 @@
       y.style.display = "block";
   
     }
+    setTimeout(() => {
+      const box1 = document.getElementById("email_error");
+    
+      
+      box1.style.visibility= 'collapse';
+      document.getElementById("email_error").innerHTML = "";
+    
+      
+    }, 1200); 

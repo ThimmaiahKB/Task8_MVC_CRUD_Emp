@@ -54,6 +54,13 @@
     width :91px;
     
 }
+#email_error
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
